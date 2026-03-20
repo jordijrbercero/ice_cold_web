@@ -24,13 +24,13 @@ export function Hero() {
         </div>
 
         {/* Logo */}
-        <div className="mb-6 w-36 h-36 md:w-52 md:h-52 overflow-visible">
+        <div className="mb-6 w-72 h-72 md:w-[416px] md:h-[416px] overflow-visible">
           <Image
             src="/images/logo.png"
             alt={platformData.name}
-            width={220}
-            height={220}
-            className="w-36 h-36 md:w-70 md:h-70 object-contain drop-shadow-2xl scale-125 origin-center"
+            width={800} // Aumentado considerablemente para nitidez
+            height={800} // Aumentado considerablemente para nitidez
+            className="w-72 h-72 md:w-[560px] md:h-[560px] object-contain drop-shadow-2xl scale-125 origin-center"
             priority
           />
         </div>
