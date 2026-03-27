@@ -1,102 +1,146 @@
 export const platformData = {
   name: "Ice Cold",
-  tagline: "La plataforma para barberías que combina reservas online y recomendaciones de cortes con IA",
-  description: "Estamos construyendo una nueva forma de descubrir cortes de pelo: analiza tu rostro, encuentra tu estilo ideal y reserva fácilmente.",
-  
+  tagline: "Reservas + IA para barberias.",
+  description: "Software para barberias con reservas online y IA facial.",
+  eyebrow: "Reservas + IA",
+
   contact: {
     email: "hola@icecold.io",
     instagram: "icecold_app",
   },
 
+  heroStats: [
+    { value: "24/7", label: "Reservas" },
+    { value: "IA", label: "IA facial" },
+    { value: "B2B", label: "Para barberias" },
+  ],
+
+  services: [
+    {
+      category: "Reservas",
+      items: [
+        {
+          name: "Agenda online",
+          detail: "Reserva rapida desde el movil.",
+          price: "24/7",
+        },
+        {
+          name: "Captacion social",
+          detail: "Instagram y WhatsApp a reserva.",
+          price: "Mas reservas",
+        },
+      ],
+    },
+    {
+      category: "IA",
+      items: [
+        {
+          name: "IA facial",
+          detail: "Sugerencias antes de reservar.",
+          price: "IA aplicada",
+        },
+        {
+          name: "Diagnostico previo",
+          detail: "Mas contexto en cada cita.",
+          price: "Mas claridad",
+        },
+      ],
+    },
+    {
+      category: "Marca",
+      items: [],
+    },
+  ],
+
   howItWorks: [
     {
       step: 1,
-      title: "Escanea tu rostro",
-      description: "El cliente utiliza la cámara para analizar su cara de forma rápida y segura.",
+      title: "Activa el enlace",
+      description: "Comparte en web, bio o WhatsApp.",
       icon: "scan",
     },
     {
       step: 2,
-      title: "La IA recomienda el mejor corte",
-      description: "Nuestro sistema analiza la forma del rostro y sugiere estilos que favorecen al cliente.",
+      title: "IA orienta el estilo",
+      description: "Sugerencias claras antes de reservar.",
       icon: "sparkles",
     },
     {
       step: 3,
-      title: "Reserva fácilmente",
-      description: "El cliente puede reservar en barberías que utilicen la plataforma.",
+      title: "Reserva con contexto",
+      description: "La cita llega mejor preparada.",
       icon: "calendar",
     },
   ],
 
   benefits: [
     {
-      title: "Más reservas",
-      description: "Un sistema moderno que facilita que los clientes encuentren y reserven barberías en cualquier momento.",
-      icon: "trending",
-    },
-    {
-      title: "Clientes más satisfechos",
-      description: "La IA ayuda a elegir un corte que realmente favorece al cliente, reduciendo malentendidos.",
-      icon: "smile",
-    },
-    {
-      title: "Diferenciación tecnológica",
-      description: "Las barberías podrán ofrecer una experiencia innovadora basada en inteligencia artificial.",
+      title: "Tecnologia con identidad",
+      description: "Visual de barberia, sin sonar generico.",
       icon: "star",
     },
     {
-      title: "Menos indecisión del cliente",
-      description: "Los clientes llegan sabiendo qué corte quieren, eliminando el típico 'no sé qué cortarme'.",
+      title: "Mas reservas, menos gestion",
+      description: "Menos mensajes, mas citas.",
+      icon: "trending",
+    },
+    {
+      title: "Clientes mas decididos",
+      description: "IA previa para orientar el estilo.",
+      icon: "smile",
+    },
+    {
+      title: "Barberias mejor posicionadas",
+      description: "Imagen mas moderna y clara.",
       icon: "target",
     },
   ],
 
   technology: {
-    title: "Inteligencia artificial aplicada al estilo personal",
-    description: "Nuestro sistema analiza características faciales para recomendar los estilos de corte que mejor se adaptan a cada persona.",
+    title: "IA facial para mejorar la reserva",
+    description: "Analizamos rasgos para sugerir estilos. El barbero decide.",
     features: [
       {
-        title: "Forma del rostro",
-        description: "Detectamos si el rostro es ovalado, redondo, cuadrado, alargado u otras formas.",
+        title: "Lectura facial",
+        description: "Detecta forma y proporciones.",
       },
       {
-        title: "Proporciones faciales",
-        description: "Analizamos las proporciones entre frente, nariz, mandíbula y pómulos.",
+        title: "Sugerencia previa",
+        description: "Antes de la cita, con contexto.",
       },
       {
-        title: "Línea de la mandíbula",
-        description: "Evaluamos la definición y ángulo de la mandíbula para sugerir cortes que la favorezcan.",
+        title: "Agenda integrada",
+        description: "IA y reserva en un solo flujo.",
       },
       {
-        title: "Frente y pómulos",
-        description: "Consideramos el tamaño de la frente y la estructura de los pómulos.",
+        title: "Ventaja real",
+        description: "Innovacion sin perder identidad.",
       },
     ],
   },
 
   faq: [
     {
-      question: "¿Cómo funcionará el escáner de IA?",
-      answer: "El cliente accederá a la web de la barbería, activará la cámara y nuestro algoritmo analizará su rostro en segundos. Basándose en la forma de la cara, proporciones y características faciales, sugerirá los cortes que mejor le favorecerán.",
+      question: "Que es Ice Cold?",
+      answer: "Software para barberias con reservas e IA facial.",
     },
     {
-      question: "¿Se necesitará hardware especial?",
-      answer: "No, todo funcionará a través del navegador web. Los clientes solo necesitarán un smartphone o tablet con cámara.",
+      question: "La IA sustituye al barbero?",
+      answer: "No. La IA orienta, el barbero decide.",
     },
     {
-      question: "¿Cuándo estará disponible la plataforma?",
-      answer: "Estamos en fase de desarrollo. Síguenos en redes sociales para estar al tanto de las novedades y el lanzamiento.",
+      question: "Hace falta hardware especial?",
+      answer: "No. Funciona en navegador y movil.",
     },
     {
-      question: "¿Cómo se integrará con mi negocio?",
-      answer: "Proporcionaremos un enlace único para cada barbería. Podrás compartirlo en redes sociales, WhatsApp, o añadirlo a tu web existente.",
+      question: "Que gana una barberia?",
+      answer: "Mas reservas y mejor experiencia.",
     },
   ],
 
   vision: {
-    title: "La próxima generación de barberías será digital",
-    description: "Estamos desarrollando una plataforma que conectará inteligencia artificial, reservas online y barberías para crear una nueva experiencia para los clientes.",
+    title: "Tecnologia que encaja con el sector barberia.",
+    description: "Reservas, marca e IA en una propuesta clara.",
   },
 }
 

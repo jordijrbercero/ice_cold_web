@@ -1,105 +1,107 @@
 import { platformData } from "@/lib/data"
-import { ScanFace, Database, Shield, Cpu, Check } from "lucide-react"
+import { Check, Cpu, Database, ScanFace, Shield } from "lucide-react"
 
 const featureIcons = [ScanFace, Database, Shield, Cpu]
 
 export function Technology() {
   return (
-    <section id="tecnologia" className="py-20 md:py-28 px-4 bg-[#0a2347]">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Content */}
-          <div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-              Tecnología de{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4FD1FF] to-[#3BA6E8]">
-                reconocimiento facial
-              </span>
-            </h2>
-            
-            <p className="text-foreground/60 text-lg mb-8 leading-relaxed">
-              {platformData.technology.description}
-            </p>
+    <section id="tecnologia" className="section-frame px-4 py-20 md:py-28">
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,#d8eefb_0%,#9fd2f6_22%,#5ba5da_52%,#1f5f97_100%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.7),transparent_28%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_85%_35%,rgba(79,209,255,0.24),transparent_24%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(255,255,255,0.12),transparent_32%,transparent_68%,rgba(255,255,255,0.08))]" />
 
-            <div className="space-y-4">
-              {platformData.technology.features.map((feature, index) => {
-                const Icon = featureIcons[index]
-                
-                return (
-                  <div
-                    key={index}
-                    className="flex items-start gap-4 p-4 bg-[#071B3A]/50 border border-[#1e3a5f] rounded-xl hover:border-[#4FD1FF]/30 transition-colors"
-                  >
-                    <div className="shrink-0 p-2 bg-[#4FD1FF]/10 rounded-lg">
-                      <Icon className="w-5 h-5 text-[#4FD1FF]" />
+      <div className="relative mx-auto grid max-w-7xl items-stretch gap-10 lg:grid-cols-[0.88fr_1.12fr]">
+        <div className="fx-shimmer h-full rounded-[2.5rem] border border-white/28 bg-[linear-gradient(180deg,rgba(39,103,170,0.74),rgba(21,76,133,0.82))] p-7 shadow-[0_28px_100px_rgba(38,94,150,0.24)] backdrop-blur-sm md:p-9">
+          <p className="text-sm uppercase tracking-[0.26em] text-cyan-100/90">Motor IA</p>
+          <h2 className="mt-4 max-w-xl font-display text-5xl leading-[0.93] text-white md:text-6xl">
+            IA para reservas, sin complicar.
+          </h2>
+          <p className="mt-5 max-w-lg text-lg leading-relaxed text-white/74">{platformData.technology.description}</p>
+
+          <div className="mt-8 grid gap-4">
+            {platformData.technology.features.slice(0, 3).map((feature, index) => {
+              const Icon = featureIcons[index]
+
+              return (
+                <div
+                  key={feature.title}
+                  className="fx-hover-lift rounded-[1.5rem] border border-white/14 bg-[linear-gradient(180deg,rgba(10,47,89,0.28),rgba(8,37,72,0.38))] p-4 backdrop-blur-sm"
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-cyan-200/18 bg-cyan-200/10">
+                      <Icon className="h-5 w-5 text-cyan-100" />
                     </div>
                     <div>
-                      <h3 className="text-foreground font-semibold mb-1">{feature.title}</h3>
-                      <p className="text-foreground/50 text-sm">{feature.description}</p>
+                      <h3 className="text-lg font-semibold text-white">{feature.title}</h3>
+                      <p className="mt-1 text-sm leading-relaxed text-white/66">{feature.description}</p>
                     </div>
                   </div>
-                )
-              })}
-            </div>
+                </div>
+              )
+            })}
           </div>
+        </div>
 
-          {/* Visual */}
-          <div className="relative">
-            <div className="relative bg-gradient-to-br from-[#071B3A] to-[#0a2347] border border-[#1e3a5f] rounded-3xl p-8 md:p-12">
-              {/* Face scan visualization */}
-              <div className="relative mx-auto w-64 md:w-80 aspect-square">
-                {/* Face outline */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="relative w-48 h-56 md:w-56 md:h-64">
-                    {/* Face shape */}
-                    <div className="absolute inset-0 border-2 border-[#4FD1FF]/30 rounded-[50%] rounded-b-[45%]" />
-                    
-                    {/* Scan lines */}
-                    <div className="absolute inset-0 overflow-hidden rounded-[50%] rounded-b-[45%]">
-                      <div className="absolute inset-x-0 h-1 bg-gradient-to-r from-transparent via-[#4FD1FF] to-transparent animate-pulse top-1/4" />
-                      <div className="absolute inset-x-0 h-1 bg-gradient-to-r from-transparent via-[#4FD1FF] to-transparent animate-pulse top-1/2 delay-300" />
-                      <div className="absolute inset-x-0 h-1 bg-gradient-to-r from-transparent via-[#4FD1FF] to-transparent animate-pulse top-3/4 delay-500" />
+        <div className="relative h-full">
+          <div className="absolute -left-10 top-10 h-40 w-40 rounded-full bg-white/18 blur-3xl" />
+          <div className="absolute -right-6 bottom-6 h-48 w-48 rounded-full bg-cyan-200/16 blur-3xl" />
+
+          <div className="fx-shimmer relative h-full overflow-hidden rounded-[2.7rem] border border-white/26 bg-[linear-gradient(180deg,rgba(47,117,187,0.78),rgba(23,84,144,0.84))] p-6 shadow-[0_30px_100px_rgba(27,78,129,0.24)] backdrop-blur-sm md:p-8">
+            <div className="absolute inset-x-10 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.75),transparent)]" />
+
+            <div className="flex h-full flex-col justify-center gap-8 rounded-[2rem] border border-white/16 bg-[linear-gradient(180deg,rgba(24,75,128,0.86),rgba(17,58,103,0.9))] p-5 pt-9 pb-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]">
+              <div className="flex items-start justify-between gap-4">
+                <div>
+                  <p className="text-xs uppercase tracking-[0.24em] text-cyan-100/86">Dashboard IA</p>
+                  <p className="mt-2 font-display text-4xl leading-none text-white">Style Match</p>
+                </div>
+                <div className="rounded-full border border-cyan-200/20 bg-cyan-200/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-cyan-100">
+                  Live AI
+                </div>
+              </div>
+
+              <div className="grid flex-1 gap-4 md:grid-cols-[0.9fr_1.1fr]">
+                <div className="fx-hover-lift rounded-[1.7rem] border border-white/12 bg-[linear-gradient(180deg,rgba(16,54,96,0.72),rgba(13,42,78,0.82))] p-5">
+                  <p className="text-xs uppercase tracking-[0.22em] text-white/60">Lectura facial</p>
+                  <div className="relative mx-auto mt-5 h-56 w-44 rounded-[48%] border-2 border-cyan-200/34">
+                    <div className="absolute inset-x-5 top-1/2 h-px -translate-y-1/2 bg-gradient-to-r from-transparent via-cyan-200 to-transparent" />
+                    <div className="absolute inset-y-5 left-1/2 w-px -translate-x-1/2 bg-gradient-to-b from-transparent via-cyan-200 to-transparent" />
+                    <div className="absolute left-[24%] top-[32%] h-2 w-2 rounded-full bg-cyan-200" />
+                    <div className="absolute right-[24%] top-[32%] h-2 w-2 rounded-full bg-cyan-200" />
+                    <div className="absolute left-1/2 top-[48%] h-2 w-2 -translate-x-1/2 rounded-full bg-cyan-200" />
+                    <div className="absolute bottom-[18%] left-1/2 h-px w-16 -translate-x-1/2 rounded-full bg-cyan-200" />
+                  </div>
+                </div>
+
+                <div className="flex h-full flex-col gap-4">
+                  <div className="fx-hover-lift rounded-[1.7rem] border border-white/12 bg-[linear-gradient(180deg,rgba(16,54,96,0.72),rgba(13,42,78,0.82))] p-5">
+                    <p className="text-xs uppercase tracking-[0.22em] text-cyan-100/82">Recomendacion</p>
+                    <p className="mt-3 max-w-xs font-display text-3xl leading-[0.95] text-white">
+                      Sugerencia antes de reservar
+                    </p>
+                    <p className="mt-3 text-sm leading-relaxed text-white/66">Contexto util antes de la cita.</p>
+                  </div>
+
+                  <div className="fx-hover-lift flex-1 rounded-[1.7rem] border border-white/12 bg-[linear-gradient(180deg,rgba(16,54,96,0.72),rgba(13,42,78,0.82))] p-5">
+                    <p className="mb-4 text-xs uppercase tracking-[0.22em] text-cyan-100/82">Checklist</p>
+                    <div className="space-y-3">
+                      <div className="flex items-center gap-3 text-sm text-white/72">
+                        <Check className="h-4 w-4 text-cyan-100" />
+                        Rostro detectado
+                      </div>
+                      <div className="flex items-center gap-3 text-sm text-white/72">
+                        <Check className="h-4 w-4 text-cyan-100" />
+                        Recomendacion lista
+                      </div>
+                      <div className="flex items-center gap-3 text-sm text-white/72">
+                        <Check className="h-4 w-4 text-cyan-100" />
+                        Reserva conectada
+                      </div>
                     </div>
-                    
-                    {/* Detection points */}
-                    <div className="absolute top-[25%] left-[25%] w-2 h-2 bg-[#4FD1FF] rounded-full animate-ping" />
-                    <div className="absolute top-[25%] right-[25%] w-2 h-2 bg-[#4FD1FF] rounded-full animate-ping delay-100" />
-                    <div className="absolute top-[45%] left-1/2 -translate-x-1/2 w-2 h-2 bg-[#4FD1FF] rounded-full animate-ping delay-200" />
-                    <div className="absolute top-[65%] left-1/2 -translate-x-1/2 w-3 h-1 bg-[#4FD1FF] rounded-full animate-ping delay-300" />
-                    <div className="absolute top-[80%] left-[30%] w-2 h-2 bg-[#4FD1FF] rounded-full animate-ping delay-400" />
-                    <div className="absolute top-[80%] right-[30%] w-2 h-2 bg-[#4FD1FF] rounded-full animate-ping delay-500" />
-                  </div>
-                </div>
-
-                {/* Corner brackets */}
-                <div className="absolute top-0 left-0 w-12 h-12 border-l-2 border-t-2 border-[#4FD1FF] rounded-tl-lg" />
-                <div className="absolute top-0 right-0 w-12 h-12 border-r-2 border-t-2 border-[#4FD1FF] rounded-tr-lg" />
-                <div className="absolute bottom-0 left-0 w-12 h-12 border-l-2 border-b-2 border-[#4FD1FF] rounded-bl-lg" />
-                <div className="absolute bottom-0 right-0 w-12 h-12 border-r-2 border-b-2 border-[#4FD1FF] rounded-br-lg" />
-              </div>
-
-              {/* Analysis output */}
-              <div className="mt-8 p-4 bg-[#071B3A] border border-[#1e3a5f] rounded-xl">
-                <p className="text-[#4FD1FF] text-xs font-mono mb-2">// Análisis completado</p>
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2">
-                    <Check className="w-4 h-4 text-green-400" />
-                    <span className="text-foreground/70 text-sm">Forma de rostro: Ovalado</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Check className="w-4 h-4 text-green-400" />
-                    <span className="text-foreground/70 text-sm">Cortes recomendados: 8</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Check className="w-4 h-4 text-green-400" />
-                    <span className="text-foreground/70 text-sm">Coincidencia: 94%</span>
                   </div>
                 </div>
               </div>
-
-              {/* Decorative elements */}
-              <div className="absolute -top-4 -right-4 w-32 h-32 bg-gradient-to-br from-[#4FD1FF]/20 to-transparent rounded-full blur-2xl" />
-              <div className="absolute -bottom-4 -left-4 w-40 h-40 bg-gradient-to-tr from-[#3BA6E8]/20 to-transparent rounded-full blur-2xl" />
             </div>
           </div>
         </div>

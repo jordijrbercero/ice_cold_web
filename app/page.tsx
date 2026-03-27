@@ -1,23 +1,37 @@
 import { Header } from "@/components/sections/header"
 import { Hero } from "@/components/sections/hero"
+import { SignatureServices } from "@/components/sections/signature-services"
 import { HowItWorks } from "@/components/sections/how-it-works"
-import { Benefits } from "@/components/sections/benefits"
+import { GalleryShowcase } from "@/components/sections/gallery-showcase"
 import { Technology } from "@/components/sections/technology"
-import { FAQ } from "@/components/sections/faq"
-import { Vision } from "@/components/sections/vision"
 import { Footer } from "@/components/sections/footer"
+import { AppDownload } from "@/components/sections/app-download"
+import { Reveal } from "@/components/reveal"
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background">
+    <main className="relative min-h-screen overflow-hidden bg-background">
+      <div className="fx-orb left-[-8rem] top-28 h-72 w-72 bg-primary/12" />
+      <div className="fx-orb right-[-6rem] top-[32rem] h-80 w-80 bg-sky-300/10" style={{ animationDelay: "-6s" }} />
+      <div className="fx-orb bottom-32 left-[22%] h-64 w-64 bg-cyan-200/8" style={{ animationDelay: "-11s" }} />
       <Header />
-      <Hero />
-      <HowItWorks />
-      <Benefits />
-      <Technology />
-      <FAQ />
-      <Vision />
+      <Reveal>
+        <Hero />
+      </Reveal>
+      <Reveal delay={60}>
+        <SignatureServices />
+      </Reveal>
+      <Reveal delay={90}>
+        <HowItWorks />
+      </Reveal>
+      <Reveal delay={120}>
+        <GalleryShowcase />
+      </Reveal>
+      <Reveal delay={180}>
+        <Technology />
+      </Reveal>
       <Footer />
+      <AppDownload />
     </main>
   )
 }
