@@ -156,20 +156,6 @@
     box-shadow: 0 24px 80px rgba(2, 10, 24, 0.34);
   }
 
-  .gold-line {
-    position: relative;
-  }
-
-  .gold-line::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -0.85rem;
-    height: 1px;
-    background: linear-gradient(90deg, rgba(79, 209, 255, 0.8), transparent);
-  }
-
   .barber-pole {
     background-image: repeating-linear-gradient(
       -55deg,

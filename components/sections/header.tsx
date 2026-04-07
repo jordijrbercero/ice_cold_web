@@ -33,12 +33,7 @@ export function Header() {
               </div>
 
               <div className="min-w-0">
-                <div className="flex items-center gap-2">
-                  <p className="truncate font-display text-2xl leading-none text-white">Ice Cold</p>
-                  <span className="hidden rounded-full border border-primary/20 bg-primary/10 px-2 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-primary md:inline-flex">
-                    B2B
-                  </span>
-                </div>
+                <p className="truncate font-display text-2xl leading-none text-white">Ice Cold</p>
                 <p className="truncate text-[10px] uppercase tracking-[0.32em] text-foreground/56">Reservas + IA</p>
               </div>
             </Link>
@@ -61,7 +56,9 @@ export function Header() {
                 Concurso mode
               </div>
               <Link
-                href="#tecnologia"
+                href="https://face-id-barber.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-bold uppercase tracking-[0.15em] text-primary-foreground transition-transform hover:-translate-y-0.5"
               >
                 <Scissors className="h-4 w-4" />
@@ -92,7 +89,9 @@ export function Header() {
                   </Link>
                 ))}
                 <Link
-                  href="#tecnologia"
+                  href="https://face-id-barber.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
                   onClick={() => setIsMenuOpen(false)}
                   className="mt-2 inline-flex items-center justify-center gap-2 rounded-2xl bg-primary px-4 py-3 text-sm font-bold uppercase tracking-[0.15em] text-primary-foreground"
                 >

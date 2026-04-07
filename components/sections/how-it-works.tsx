@@ -10,7 +10,7 @@ const icons = {
 export function HowItWorks() {
   return (
     <section id="como-funciona" className="section-frame px-4 py-20 md:py-28">
-      <div className="absolute inset-0 bg-[linear-gradient(180deg,#0d2a50_0%,#143b69_52%,#1b5287_100%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,#1a4e82_0%,#143b69_34%,#1b5287_100%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(79,209,255,0.16),transparent_26%)]" />
       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.04),transparent_28%,rgba(255,255,255,0.02)_100%)]" />
 
@@ -28,7 +28,6 @@ export function HowItWorks() {
             return (
               <div key={step.step} className="relative">
                 <div className="fx-hover-lift h-full rounded-[2rem] border border-primary/16 bg-[linear-gradient(180deg,rgba(36,97,164,0.92),rgba(22,74,130,0.94))] p-8 shadow-[0_24px_80px_rgba(24,71,119,0.16)]">
-                  <div className="absolute inset-x-8 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(190,238,255,0.65),transparent)]" />
                   <div className="mb-8 flex items-center justify-between">
                     <div className="flex h-14 w-14 items-center justify-center rounded-[1.2rem] border border-cyan-200/22 bg-[rgba(79,209,255,0.10)]">
                       <Icon className="h-6 w-6 text-cyan-100" />

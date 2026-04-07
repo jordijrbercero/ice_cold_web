@@ -10,7 +10,7 @@ const galleryImages = [
 export function GalleryShowcase() {
   return (
     <section className="section-frame px-4 py-20 md:py-28">
-      <div className="absolute inset-0 bg-[linear-gradient(180deg,#0b2649_0%,#123863_55%,#194d81_100%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,#194d81_0%,#143b69_42%,#194d81_100%)]" />
       <div className="absolute right-0 top-0 h-full w-1/3 bg-[radial-gradient(circle_at_top_right,rgba(79,209,255,0.14),transparent_42%)]" />
       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.03),transparent_24%,rgba(255,255,255,0.015)_100%)]" />
 

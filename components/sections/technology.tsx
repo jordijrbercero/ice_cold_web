@@ -6,7 +6,7 @@ const featureIcons = [ScanFace, Database, Shield, Cpu]
 export function Technology() {
   return (
     <section id="tecnologia" className="section-frame px-4 py-20 md:py-28">
-      <div className="absolute inset-0 bg-[linear-gradient(180deg,#0d2a50_0%,#143b69_26%,#1b4f82_62%,#235c95_100%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,#194d81_0%,#143b69_30%,#1b4f82_62%,#235c95_100%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(79,209,255,0.16),transparent_28%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_85%_35%,rgba(79,209,255,0.14),transparent_24%)]" />
       <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(255,255,255,0.04),transparent_32%,transparent_68%,rgba(255,255,255,0.02))]" />
@@ -48,8 +48,6 @@ export function Technology() {
           <div className="absolute -right-6 bottom-6 h-48 w-48 rounded-full bg-cyan-200/10 blur-3xl" />
 
           <div className="relative h-full overflow-hidden rounded-[2.7rem] border border-primary/16 bg-[linear-gradient(180deg,rgba(39,103,170,0.92),rgba(22,75,131,0.95))] p-6 shadow-[0_30px_100px_rgba(20,61,103,0.24)] backdrop-blur-sm md:p-8">
-            <div className="absolute inset-x-10 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.75),transparent)]" />
-
             <div className="flex h-full flex-col justify-center gap-8 rounded-[2rem] border border-primary/12 bg-[linear-gradient(180deg,rgba(15,52,93,0.94),rgba(11,40,74,0.96))] p-5 pt-9 pb-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)]">
               <div className="flex items-start justify-between gap-4">
                 <div>

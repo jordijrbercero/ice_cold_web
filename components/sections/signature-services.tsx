@@ -39,7 +39,7 @@ export function SignatureServices() {
           </div>
 
           <div className="space-y-4">
-            <div className="gold-line inline-block">
+            <div className="inline-block">
               <h2 className="max-w-2xl font-display text-5xl leading-[0.95] text-foreground md:text-6xl">
                 Software para barberias.
               </h2>
@@ -81,11 +81,10 @@ export function SignatureServices() {
         </div>
 
         <div className="relative overflow-hidden rounded-[2.5rem] border border-primary/14 bg-[linear-gradient(180deg,rgba(34,97,164,0.94),rgba(20,72,128,0.96))] p-6 shadow-[0_30px_100px_rgba(24,71,119,0.22)] md:p-8 lg:p-10">
-          <div className="absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(79,209,255,0.65),transparent)]" />
           <div className="absolute right-0 top-0 h-52 w-52 rounded-full bg-primary/10 blur-3xl" />
 
           <div className="relative">
-            <div className="flex flex-col gap-4 border-b border-primary/12 pb-6 md:flex-row md:items-end md:justify-between">
+            <div className="flex flex-col gap-4 pb-6 md:flex-row md:items-end md:justify-between">
               <div>
                 <p className="text-sm uppercase tracking-[0.24em] text-primary/80">Producto y funciones</p>
                 <h3 className="mt-3 max-w-xl font-display text-5xl leading-[0.95] text-foreground md:text-6xl">

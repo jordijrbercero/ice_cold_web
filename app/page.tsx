@@ -24,7 +24,7 @@ export default function Home() {
       <Reveal delay={90}>
         <HowItWorks />
       </Reveal>
-      <Reveal delay={120}>
+      <Reveal delay={120} className="relative z-10 -mt-2">
         <GalleryShowcase />
       </Reveal>
       <Reveal delay={180}>
