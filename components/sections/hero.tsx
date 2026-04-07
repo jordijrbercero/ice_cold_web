@@ -54,7 +54,7 @@ export function Hero() {
         </div>
 
         <div className="relative self-center lg:justify-self-end">
-          <div className="noir-panel fx-float fx-glow fx-shimmer relative overflow-hidden rounded-[2.4rem] p-4 md:p-5">
+          <div className="noir-panel fx-float fx-glow relative overflow-hidden rounded-[2.4rem] p-4 md:p-5">
             <div className="absolute inset-0 bg-[linear-gradient(145deg,rgba(79,209,255,0.14),transparent_45%)]" />
             <div className="relative overflow-hidden rounded-[2rem] border border-primary/14">
               <Image

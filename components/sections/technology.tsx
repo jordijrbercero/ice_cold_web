@@ -6,13 +6,13 @@ const featureIcons = [ScanFace, Database, Shield, Cpu]
 export function Technology() {
   return (
     <section id="tecnologia" className="section-frame px-4 py-20 md:py-28">
-      <div className="absolute inset-0 bg-[linear-gradient(180deg,#d8eefb_0%,#9fd2f6_22%,#5ba5da_52%,#1f5f97_100%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.7),transparent_28%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_85%_35%,rgba(79,209,255,0.24),transparent_24%)]" />
-      <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(255,255,255,0.12),transparent_32%,transparent_68%,rgba(255,255,255,0.08))]" />
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,#0d2a50_0%,#143b69_26%,#1b4f82_62%,#235c95_100%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(79,209,255,0.16),transparent_28%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_85%_35%,rgba(79,209,255,0.14),transparent_24%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(255,255,255,0.04),transparent_32%,transparent_68%,rgba(255,255,255,0.02))]" />
 
       <div className="relative mx-auto grid max-w-7xl items-stretch gap-10 lg:grid-cols-[0.88fr_1.12fr]">
-        <div className="fx-shimmer h-full rounded-[2.5rem] border border-white/28 bg-[linear-gradient(180deg,rgba(39,103,170,0.74),rgba(21,76,133,0.82))] p-7 shadow-[0_28px_100px_rgba(38,94,150,0.24)] backdrop-blur-sm md:p-9">
+        <div className="h-full rounded-[2.5rem] border border-primary/16 bg-[linear-gradient(180deg,rgba(36,97,164,0.9),rgba(20,72,128,0.94))] p-7 shadow-[0_28px_100px_rgba(22,65,110,0.24)] backdrop-blur-sm md:p-9">
           <p className="text-sm uppercase tracking-[0.26em] text-cyan-100/90">Motor IA</p>
           <h2 className="mt-4 max-w-xl font-display text-5xl leading-[0.93] text-white md:text-6xl">
             IA para reservas, sin complicar.
@@ -44,13 +44,13 @@ export function Technology() {
         </div>
 
         <div className="relative h-full">
-          <div className="absolute -left-10 top-10 h-40 w-40 rounded-full bg-white/18 blur-3xl" />
-          <div className="absolute -right-6 bottom-6 h-48 w-48 rounded-full bg-cyan-200/16 blur-3xl" />
+          <div className="absolute -left-10 top-10 h-40 w-40 rounded-full bg-cyan-200/10 blur-3xl" />
+          <div className="absolute -right-6 bottom-6 h-48 w-48 rounded-full bg-cyan-200/10 blur-3xl" />
 
-          <div className="fx-shimmer relative h-full overflow-hidden rounded-[2.7rem] border border-white/26 bg-[linear-gradient(180deg,rgba(47,117,187,0.78),rgba(23,84,144,0.84))] p-6 shadow-[0_30px_100px_rgba(27,78,129,0.24)] backdrop-blur-sm md:p-8">
+          <div className="relative h-full overflow-hidden rounded-[2.7rem] border border-primary/16 bg-[linear-gradient(180deg,rgba(39,103,170,0.92),rgba(22,75,131,0.95))] p-6 shadow-[0_30px_100px_rgba(20,61,103,0.24)] backdrop-blur-sm md:p-8">
             <div className="absolute inset-x-10 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.75),transparent)]" />
 
-            <div className="flex h-full flex-col justify-center gap-8 rounded-[2rem] border border-white/16 bg-[linear-gradient(180deg,rgba(24,75,128,0.86),rgba(17,58,103,0.9))] p-5 pt-9 pb-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]">
+            <div className="flex h-full flex-col justify-center gap-8 rounded-[2rem] border border-primary/12 bg-[linear-gradient(180deg,rgba(15,52,93,0.94),rgba(11,40,74,0.96))] p-5 pt-9 pb-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)]">
               <div className="flex items-start justify-between gap-4">
                 <div>
                   <p className="text-xs uppercase tracking-[0.24em] text-cyan-100/86">Dashboard IA</p>

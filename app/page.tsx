@@ -3,9 +3,9 @@ import { Hero } from "@/components/sections/hero"
 import { SignatureServices } from "@/components/sections/signature-services"
 import { HowItWorks } from "@/components/sections/how-it-works"
 import { GalleryShowcase } from "@/components/sections/gallery-showcase"
+import { AppDownloadBanner } from "@/components/sections/app-download-banner"
 import { Technology } from "@/components/sections/technology"
-import { Footer } from "@/components/sections/footer"
-import { AppDownload } from "@/components/sections/app-download"
+import { FooterClean } from "@/components/sections/footer-clean"
 import { Reveal } from "@/components/reveal"
 
 export default function Home() {
@@ -30,8 +30,10 @@ export default function Home() {
       <Reveal delay={180}>
         <Technology />
       </Reveal>
-      <Footer />
-      <AppDownload />
+      <FooterClean />
+      <Reveal delay={210}>
+        <AppDownloadBanner />
+      </Reveal>
     </main>
   )
 }

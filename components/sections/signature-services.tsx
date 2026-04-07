@@ -25,10 +25,10 @@ const balancedHighlights =
 
 export function SignatureServices() {
   return (
-    <section id="servicios" className="section-frame px-4 py-16 md:py-20">
-      <div className="absolute inset-0 bg-[linear-gradient(180deg,#0b2a52_0%,#123763_52%,#184777_100%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(79,209,255,0.18),transparent_26%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,rgba(59,166,232,0.16),transparent_30%)]" />
+    <section id="servicios" className="section-frame px-4 pb-8 pt-16 md:pb-10 md:pt-20">
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,#0b2649_0%,#123863_52%,#1a4e82_100%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(79,209,255,0.16),transparent_26%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,rgba(59,166,232,0.14),transparent_30%)]" />
       <div className="absolute inset-0 grain-overlay opacity-15" />
 
       <div className="relative mx-auto grid max-w-7xl items-start gap-12 lg:grid-cols-[0.88fr_1.12fr]">
@@ -50,7 +50,7 @@ export function SignatureServices() {
             </p>
           </div>
 
-          <div className="fx-shimmer fx-hover-lift relative overflow-hidden rounded-[2rem] border border-primary/14 bg-[linear-gradient(180deg,rgba(27,83,144,0.94),rgba(18,63,118,0.94))] p-6 shadow-[0_24px_80px_rgba(24,71,119,0.20)] md:p-7">
+          <div className="fx-hover-lift relative overflow-hidden rounded-[2rem] border border-primary/14 bg-[linear-gradient(180deg,rgba(31,92,156,0.9),rgba(18,63,118,0.94))] p-6 shadow-[0_24px_80px_rgba(24,71,119,0.18)] md:p-7">
             <div className="absolute left-0 top-0 h-full w-4 barber-pole" />
             <div className="absolute inset-y-0 right-0 w-40 bg-[radial-gradient(circle_at_center,rgba(79,209,255,0.22),transparent_70%)]" />
 
@@ -80,7 +80,7 @@ export function SignatureServices() {
           </div>
         </div>
 
-        <div className="fx-shimmer relative overflow-hidden rounded-[2.5rem] border border-primary/14 bg-[linear-gradient(180deg,rgba(31,92,156,0.96),rgba(20,72,128,0.96))] p-6 shadow-[0_30px_100px_rgba(24,71,119,0.24)] md:p-8 lg:p-10">
+        <div className="relative overflow-hidden rounded-[2.5rem] border border-primary/14 bg-[linear-gradient(180deg,rgba(34,97,164,0.94),rgba(20,72,128,0.96))] p-6 shadow-[0_30px_100px_rgba(24,71,119,0.22)] md:p-8 lg:p-10">
           <div className="absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(79,209,255,0.65),transparent)]" />
           <div className="absolute right-0 top-0 h-52 w-52 rounded-full bg-primary/10 blur-3xl" />
 

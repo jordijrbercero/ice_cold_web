@@ -224,21 +224,6 @@
     border-color: rgba(79, 209, 255, 0.26);
   }
 
-  .fx-shimmer {
-    position: relative;
-    overflow: hidden;
-  }
-
-  .fx-shimmer::after {
-    content: "";
-    position: absolute;
-    inset: -20%;
-    background: linear-gradient(115deg, transparent 38%, rgba(180, 236, 255, 0.16) 50%, transparent 62%);
-    transform: translateX(-65%);
-    animation: shimmer-drift 8s ease-in-out infinite;
-    pointer-events: none;
-  }
-
   .fx-float {
     animation: float-drift 7s ease-in-out infinite;
   }
@@ -253,20 +238,6 @@
     filter: blur(80px);
     pointer-events: none;
     animation: orb-drift 16s ease-in-out infinite;
-  }
-}
-
-@keyframes shimmer-drift {
-  0%,
-  100% {
-    transform: translateX(-68%) skewX(-12deg);
-    opacity: 0.35;
-  }
-
-  45%,
-  55% {
-    transform: translateX(68%) skewX(-12deg);
-    opacity: 0.8;
   }
 }
 
@@ -313,7 +284,6 @@
   }
 
   .fx-hover-lift,
-  .fx-shimmer::after,
   .fx-float,
   .fx-glow,
   .fx-orb {

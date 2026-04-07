@@ -8,7 +8,7 @@ export function Vision() {
       <div className="absolute inset-0 bg-[linear-gradient(180deg,#12305c,#0c2950_48%,#082040)]" />
 
       <div className="relative mx-auto max-w-5xl">
-        <div className="fx-shimmer fx-glow overflow-hidden rounded-[2.6rem] border border-primary/18 bg-[linear-gradient(180deg,rgba(18,58,108,0.94),rgba(12,41,80,0.92))] p-8 text-center shadow-[0_24px_70px_rgba(3,11,24,0.22)] md:p-14">
+        <div className="fx-glow overflow-hidden rounded-[2.6rem] border border-primary/18 bg-[linear-gradient(180deg,rgba(18,58,108,0.94),rgba(12,41,80,0.92))] p-8 text-center shadow-[0_24px_70px_rgba(3,11,24,0.22)] md:p-14">
           <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-transparent via-primary to-transparent" />
           <div className="absolute left-[-8%] top-1/2 h-56 w-56 -translate-y-1/2 rounded-full bg-primary/16 blur-3xl" />
           <div className="absolute right-[-8%] top-1/2 h-56 w-56 -translate-y-1/2 rounded-full bg-[#3b78b8]/18 blur-3xl" />

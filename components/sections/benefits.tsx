@@ -34,7 +34,7 @@ export function Benefits() {
             return (
               <div
                 key={index}
-                className="fx-hover-lift fx-shimmer rounded-[2rem] border border-primary/14 bg-[linear-gradient(180deg,rgba(31,92,156,0.92),rgba(20,72,128,0.92))] p-8 shadow-[0_24px_80px_rgba(24,71,119,0.18)]"
+                className="fx-hover-lift rounded-[2rem] border border-primary/14 bg-[linear-gradient(180deg,rgba(31,92,156,0.92),rgba(20,72,128,0.92))] p-8 shadow-[0_24px_80px_rgba(24,71,119,0.18)]"
               >
                 <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-[1.15rem] border border-primary/22 bg-[rgba(79,209,255,0.10)]">
                   <Icon className="h-6 w-6 text-primary" />
